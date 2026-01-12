@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="fr">
+{% extends "base.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-</head>
+{% block title %}Projects | TaskForge{% endblock %}
 
-<body>
-    <h1>Projects</h1>
+{% block content %}
+    <h2>Projects</h2>
 
     {% if projects %}
     <ul>
@@ -19,6 +14,5 @@
     {% else %}
     <p>No projects yet.</p>
     {% endif %}
-</body>
-
-</html>
+    
+{% endblock %}  
