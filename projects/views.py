@@ -1,6 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 from .models import Project
+
+def home(request):
+    return render(request, "projects/home.html")
 
 def project_list(request):
     projects = Project.objects.all()
