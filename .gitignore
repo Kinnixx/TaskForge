@@ -5,10 +5,23 @@ __pycache__/
 # Environments
 .env
 .venv/
+venv/
 
 # Django
 db.sqlite3
+db.sqlite3-journal
 media/
 
-# OS
+# Node
+node_modules/
+
+# Tailwind build output
+projects/static/projects/css/tailwind.css
+
+# OS / Editor
 .DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
